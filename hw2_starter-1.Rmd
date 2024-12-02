@@ -58,10 +58,13 @@ You should be able to replicate the following plots:
 ***source function:https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/source + review of CI's: https://www.geeksforgeeks.org/how-to-plot-a-confidence-interval-in-r/#*** 
 
 ```{r}
+library(devtools)
+library(readr)
+
 devtools::load_all("Rpackage")
 
-dat <- read.csv("Rpackage/data/contraceptive_use-1.csv")
-est <- read.csv("Rpackage/data/est-1.csv")
+dat <- read_csv("Rpackage/data/contraceptive_use-1.csv")
+est <- read_csv("Rpackage/data/est-1.csv")
 
 
 ```
